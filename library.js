@@ -18,7 +18,8 @@ addBooks = function (newBooks) {
 
 printInventory = function () {
   this.books.forEach((book) => {
-    console.log(`${book.title} by ${book.author}`);
+    const {title, author} = book;
+    console.log(`${title} by ${author}`);
   });
 };
 };
